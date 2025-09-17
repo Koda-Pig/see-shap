@@ -1,4 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Sup bitch");
+﻿string? name = Console.ReadLine();
 
-Console.WriteLine("fuck off");
+if (!string.IsNullOrEmpty(name))
+{
+    Console.WriteLine($"your name is {name}");
+}
+else
+{
+    Console.WriteLine("You're supposed to give a name");
+}
